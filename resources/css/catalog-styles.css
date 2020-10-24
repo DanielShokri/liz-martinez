@@ -1,0 +1,415 @@
+@import "../css/fonts.css";
+
+/* Navbar Styles */
+
+.nav {
+  width: 100%;
+}
+
+button:focus {
+  outline: 0;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+  align-items: center;
+  margin: 1rem 24px;
+}
+
+.logo {
+  width: 254px;
+}
+
+#myBtn {
+  cursor: pointer;
+  font-family: GildaDisplay;
+}
+
+/* Carousel Styles */
+
+#owl-demo {
+  margin-left: 24px;
+  position: relative;
+}
+
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: 600px;
+}
+
+.owl-carousel {
+  width: 37%;
+}
+
+.owl-dots {
+  width: 91.3%;
+}
+
+.page-container {
+  display: flex;
+  position: relative;
+}
+
+.owl-dots {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.slider-counter {
+  position: absolute;
+  top: 96%;
+  left: 1.5%;
+  font-family: GildaDisplay;
+}
+
+/* Text Styles */
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  height: 400px;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.text-header {
+  font-size: 20px;
+  font-family: GildaDisplay;
+  margin-bottom: 42px;
+  color: #2f2f2f;
+  letter-spacing: 0.29px;
+}
+
+.text-description {
+  font-size: 15px;
+  font-family: Karla;
+  color: #2f2f2f;
+  line-height: 28px;
+  width: 411px;
+  letter-spacing: 0.21px;
+}
+
+.model-img-text {
+  margin-bottom: 35px;
+}
+
+/* Others */
+
+.next-page-arrow {
+  position: absolute;
+  bottom: 30px;
+  right: 28px;
+  cursor: pointer;
+}
+
+.model-image {
+  max-width: 90%;
+}
+
+.mobile-divider {
+  display: none;
+  color: #e8e8e8;
+}
+
+.next-model-mobile {
+  display: none;
+}
+
+.footer-arrow-next {
+  display: none;
+}
+
+/* Modal */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 28px 24px;
+  border: 1px solid #888;
+  width: 96.8%;
+  height: 92vh;
+  overflow-y: scroll;
+}
+
+.modal-content-logo-mobile {
+  display: none;
+}
+
+.icon-margin {
+  margin: 0 5px;
+}
+
+.social-icons {
+  margin: 0 0 20px 0;
+}
+
+.liz-site-link {
+  margin: 27px 0;
+  font-family: GildaDisplay;
+  text-transform: uppercase;
+  color: #2f2f2f;
+}
+
+.liz-site-link a {
+  text-decoration: none;
+}
+
+.modal-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-logo {
+  width: 259px;
+}
+
+.modal-text-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.modal-description {
+  margin: 0 0 10px 0;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.modal-text {
+  width: 700px;
+  height: 449px;
+  font-family: Karla;
+  font-size: 15px;
+  line-height: 1.73;
+  letter-spacing: 0.21px;
+  text-align: center;
+  color: #2f2f2f;
+  margin: 20px auto;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+/* @media screen and (max-width: 376px) { */
+@media screen and (max-width: 450px) {
+  .logo {
+    width: 157px;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  ul {
+    margin: 6px 15px;
+    /* width: 100%; */
+  }
+
+  .page-container {
+    flex-direction: column;
+  }
+
+  .text-container {
+    align-self: unset;
+    margin-left: 15px;
+    margin-top: 50px;
+    height: auto;
+  }
+
+  .text-description {
+    font-size: 13.5px;
+    width: unset;
+  }
+
+  .text-header {
+    margin-bottom: 22px;
+  }
+
+  .model-img-text {
+    margin-bottom: 5px;
+    width: 313px;
+  }
+
+  .next-page-arrow {
+    display: none;
+  }
+
+  .owl-dots {
+    width: 93.6%;
+  }
+
+  .owl-carousel {
+    width: 100%;
+  }
+
+  #owl-demo {
+    margin-left: 15px;
+  }
+
+  .slider-counter {
+    top: 53.9%;
+    left: 4.5%;
+  }
+
+  .model-image {
+    max-width: 92%;
+    max-height: 444px;
+  }
+
+  .mobile-divider {
+    display: inline-block;
+    width: 90%;
+    border: 1px solid;
+    margin-bottom: 15px;
+  }
+
+  .footer-next {
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-arrow-next {
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 4px;
+  }
+
+  .next-model-mobile {
+    display: inline-block;
+    font-family: Karla;
+    font-size: 13.5px;
+    line-height: 1.7;
+    letter-spacing: 4.82px;
+    color: #2f2f2f;
+    margin: 0 0 10px 5px;
+  }
+
+  .next-arrow-img {
+    width: 43px;
+  }
+
+  /* Modal */
+
+  .modal-logo {
+    width: 157px;
+  }
+
+  .close {
+    width: 24px;
+  }
+
+  .modal-text-container {
+    margin-top: 65px;
+  }
+
+  .modal-content {
+    padding: 17px 12px;
+    width: 92.8%;
+    height: 96vh;
+  }
+
+  .modal-text {
+    width: unset;
+  }
+
+  .modal-description {
+    line-height: 1.73;
+    letter-spacing: 0.21px;
+    color: #2f2f2f;
+  }
+
+  .modal-content-logo {
+    display: none;
+  }
+
+  .modal-content-logo-mobile {
+    display: inline;
+  }
+
+  /* images counters */
+
+  .slider-counter-1 {
+    top: 50.6%;
+    left: 4.5%;
+  }
+
+  .slider-counter-4 {
+    top: 53.9%;
+  }
+
+  .slider-counter-5 {
+    top: 53.9%;
+  }
+
+  .slider-counter-7 {
+    top: 50.9%;
+  }
+
+  .slider-counter-9 {
+    top: 52.9%;
+  }
+
+  .slider-counter-10 {
+    top: 50.9%;
+  }
+
+  .slider-counter-11 {
+    top: 52.9%;
+  }
+
+  .slider-counter-13 {
+    top: 52.9%;
+  }
+
+  .slider-counter-14 {
+    top: 52.9%;
+  }
+
+  .slider-counter-15 {
+    top: 52.9%;
+  }
+
+  .slider-counter-16 {
+    top: 52.9%;
+  }
+
+  .slider-counter-17 {
+    top: 55.2%;
+  }
+}
