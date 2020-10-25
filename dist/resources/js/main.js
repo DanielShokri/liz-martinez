@@ -20,7 +20,27 @@ $(document).ready(function () {
       items: 1,
       stagePadding: 0,
       responsiveClass: true,
-
+      merge: true,
+      video: true,
+      singleItem: true,
+      onInitialized: function () {
+        if ($(".owl-item.active video", this.$element).length) {
+          $(".owl-item.active video", this.$element)[0].play();
+          owl.trigger("stop.owl.autoplay");
+          $(".owl-item.active video", this.$element).on("ended", function () {
+            $(".owl-item.active video", this.$element)[0].play();
+          });
+        }
+      },
+      onTranslated: function () {
+        if ($(".owl-item.active video", this.$element).length) {
+          $(".owl-item.active video", this.$element)[0].play();
+          owl.trigger("stop.owl.autoplay");
+          $(".owl-item.active video", this.$element).on("ended", function () {
+            $(".owl-item.active video", this.$element)[0].play();
+          });
+        }
+      },
       responsive: {
         375: {
           items: 1,
