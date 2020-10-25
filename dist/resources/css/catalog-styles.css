@@ -226,7 +226,6 @@ ul {
 
 /* Media Queries */
 
-/* @media screen and (max-width: 376px) { */
 @media screen and (max-width: 450px) {
   .logo {
     width: 157px;
@@ -415,5 +414,20 @@ ul {
 
   .slider-counter-17 {
     top: 55.2%;
+  }
+}
+
+@media screen and (max-width: 1441px) and (min-width: 795px) {
+  .page-container {
+    height: 88vh;
+    align-items: center;
+  }
+
+  .model-image {
+    width: 100% !important;
+  }
+
+  #owl-demo .item img {
+    height: 725px;
   }
 }
