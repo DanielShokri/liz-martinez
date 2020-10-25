@@ -37,7 +37,7 @@ ul {
 
 #owl-demo .item img {
   display: block;
-  width: 100%;
+  width: 90%;
   height: 600px;
 }
 
@@ -106,10 +106,10 @@ ul {
   right: 28px;
   cursor: pointer;
 }
-
+/* 
 .model-image {
   max-width: 90%;
-}
+} */
 
 .mobile-divider {
   display: none;
@@ -423,11 +423,17 @@ ul {
     align-items: center;
   }
 
-  .model-image {
-    width: 100% !important;
-  }
-
   #owl-demo .item img {
     height: 725px;
+    width: 100%;
+  }
+
+  .owl-dots {
+    width: 101%;
+  }
+
+  .slider-counter {
+    top: 95.3%;
+    left: 1.8%;
   }
 }
