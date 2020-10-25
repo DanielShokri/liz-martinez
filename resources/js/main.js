@@ -1,9 +1,10 @@
 $(document).ready(function () {
-  $("#owl-demo")
+  var owl = $("#owl-demo")
     .on("initialized.owl.carousel changed.owl.carousel", function (e) {
       if (!e.namespace) {
         return;
       }
+
       const carousel = e.relatedTarget;
       const counter = carousel.relative(carousel.current()) + 1;
       $(".slider-counter").text(
@@ -19,6 +20,7 @@ $(document).ready(function () {
       items: 1,
       stagePadding: 0,
       responsiveClass: true,
+
       responsive: {
         375: {
           items: 1,
@@ -27,6 +29,9 @@ $(document).ready(function () {
         },
       },
     });
+  $(".owl-item").click(function () {
+    owl.trigger("next.owl.carousel");
+  });
 });
 
 // Modal
