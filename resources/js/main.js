@@ -25,7 +25,6 @@ $(document).ready(function () {
         375: {
           items: 1,
           nav: false,
-          // autoHeight: true,
         },
       },
     });
