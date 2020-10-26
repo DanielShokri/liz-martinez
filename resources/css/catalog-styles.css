@@ -106,10 +106,13 @@ ul {
   right: 28px;
   cursor: pointer;
 }
-/* 
-.model-image {
-  max-width: 90%;
-} */
+
+.liz-video-dress {
+  height: auto;
+  width: 547px;
+  position: absolute;
+  left: -21px;
+}
 
 .mobile-divider {
   display: none;
@@ -337,18 +340,15 @@ ul {
     width: 24px;
   }
 
-  .modal-text-container {
-    margin-top: 65px;
-  }
-
   .modal-content {
-    padding: 17px 12px;
-    width: 92.8%;
+    /* padding: 17px 12px; */
+    width: 100%;
     height: 100vh;
   }
 
   .modal-text {
     width: unset;
+    padding: 0 10px;
   }
 
   .modal-description {
@@ -363,6 +363,13 @@ ul {
 
   .modal-content-logo-mobile {
     display: inline;
+  }
+  /* Video slide */
+  .liz-video-dress {
+    height: auto;
+    width: 355px;
+    position: absolute;
+    left: -5px;
   }
 
   /* images counters */
@@ -424,7 +431,7 @@ ul {
   }
 
   #owl-demo .item img {
-    height: 725px;
+    height: 645px;
     width: 100%;
   }
 
