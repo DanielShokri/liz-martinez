@@ -230,6 +230,13 @@ ul {
 /* Media Queries */
 
 @media screen and (max-width: 450px) {
+  /* Safari modal fix */
+  _::-webkit-full-page-media,
+  _:future,
+  :root .safari_only {
+    padding-bottom: 65px;
+  }
+
   .logo {
     width: 157px;
   }
