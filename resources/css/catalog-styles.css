@@ -275,7 +275,7 @@ ul {
   }
 
   .owl-dots {
-    width: 93.6%;
+    width: 92.6%;
   }
 
   .owl-carousel {
@@ -369,14 +369,22 @@ ul {
     height: auto;
     width: 355px;
     position: absolute;
-    left: -5px;
+    left: -15px;
   }
 
   /* images counters */
 
   .slider-counter-1 {
-    top: 50.6%;
+    top: 49.6%;
     left: 4.5%;
+  }
+
+  .slider-counter-2 {
+    top: 51.9%;
+  }
+
+  .slider-counter-3 {
+    top: 51.9%;
   }
 
   .slider-counter-4 {
@@ -385,6 +393,10 @@ ul {
 
   .slider-counter-5 {
     top: 53.9%;
+  }
+
+  .slider-counter-6 {
+    top: 51.9%;
   }
 
   .slider-counter-7 {
