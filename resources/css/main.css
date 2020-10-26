@@ -20,6 +20,12 @@ button:focus {
   cursor: pointer;
 }
 
+.full-width-click-poster-2 {
+  width: 100%;
+  height: 100vh;
+  cursor: pointer;
+}
+
 .main-site {
   width: 100%;
   height: 100vh;
@@ -31,6 +37,13 @@ button:focus {
   width: 100%;
   height: 100vh;
   background: url("../images/cover_11_12.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.poster-2 {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/Cover_3.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -81,8 +94,16 @@ img {
     background-size: cover;
     position: relative;
   }
+
   .poster-1 {
-    background: url("../images/cover_11_12_mobile.jpg") no-repeat center center
+    background: url("../images/Cover_2_662_new.jpg") no-repeat center center
+      fixed;
+    background-size: cover;
+    position: relative;
+  }
+
+  .poster-2 {
+    background: url("../images/Cover_3_662_new.jpg") no-repeat center center
       fixed;
     background-size: cover;
     position: relative;
