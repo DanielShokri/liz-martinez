@@ -16,7 +16,7 @@ $(document).ready(function () {
       loop: true,
       slideSpeed: 500,
       paginationSpeed: 600,
-      center: false,
+      // center: false,
       items: 1,
       stagePadding: 0,
       responsiveClass: true,
