@@ -113,7 +113,7 @@ img {
   .arrow-right {
     display: inline-block;
     position: absolute;
-    top: 63.5%;
+    top: 532px;
     right: -9%;
     animation: none;
     height: 50px;
