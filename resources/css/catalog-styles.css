@@ -134,6 +134,7 @@ ul {
   line-height: 1.7;
   letter-spacing: 4.82px;
   align-items: center;
+  color: #2f2f2f;
 }
 
 .liz-video-dress {
@@ -450,64 +451,70 @@ ul {
   /* images counters */
 
   .slider-counter-1 {
-    top: 49.6%;
+    top: 46.6%;
     left: 4.5%;
   }
 
   .slider-counter-2 {
-    top: 51.9%;
+    top: 46.5%;
   }
 
   .slider-counter-3 {
-    top: 51.9%;
+    top: 48.5%;
   }
 
   .slider-counter-4 {
-    top: 52.9%;
+    top: 49.5%;
   }
 
   .slider-counter-5 {
-    top: 52.9%;
+    top: 50%;
   }
 
   .slider-counter-6 {
-    top: 52.9%;
+    top: 48.8%;
   }
 
   .slider-counter-7 {
-    top: 50.9%;
+    top: 45.5%;
   }
 
+  .slider-counter-8 {
+    top: 48%;
+  }
   .slider-counter-9 {
-    top: 51.9%;
+    top: 48.8%;
   }
 
   .slider-counter-10 {
-    top: 50.9%;
+    top: 45.5%;
   }
 
   .slider-counter-11 {
-    top: 51.9%;
+    top: 47%;
   }
 
+  .slider-counter-12 {
+    top: 48%;
+  }
   .slider-counter-13 {
-    top: 51.9%;
+    top: 47%;
   }
 
   .slider-counter-14 {
-    top: 51.9%;
+    top: 47%;
   }
 
   .slider-counter-15 {
-    top: 51.9%;
+    top: 48%;
   }
 
   .slider-counter-16 {
-    top: 51.9%;
+    top: 48.8%;
   }
 
   .slider-counter-17 {
-    top: 51.2%;
+    top: 46.5%;
   }
 }
 
