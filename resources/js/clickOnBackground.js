@@ -8,7 +8,7 @@ if (mainSite) {
 const firstPoster = document.querySelector(".full-width-click-poster-1");
 if (firstPoster) {
   firstPoster.addEventListener("click", () => {
-    window.location.href = "/dist/catalog/model12/rosedress.html";
+    window.location.href = "/dist/catalog/model12/poppydress.html";
   });
 }
 
