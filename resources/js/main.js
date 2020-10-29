@@ -23,24 +23,24 @@ $(document).ready(function () {
       merge: true,
       video: true,
       singleItem: true,
-      onInitialized: function () {
-        if ($(".owl-item.active video", this.$element).length) {
-          $(".owl-item.active video", this.$element)[0].play();
-          owl.trigger("stop.owl.autoplay");
-          $(".owl-item.active video", this.$element).on("ended", function () {
-            $(".owl-item.active video", this.$element)[0].play();
-          });
-        }
-      },
-      onTranslated: function () {
-        if ($(".owl-item.active video", this.$element).length) {
-          $(".owl-item.active video", this.$element)[0].play();
-          owl.trigger("stop.owl.autoplay");
-          $(".owl-item.active video", this.$element).on("ended", function () {
-            $(".owl-item.active video", this.$element)[0].play();
-          });
-        }
-      },
+      // onInitialized: function () {
+      //   if ($(".owl-item.active video", this.$element).length) {
+      //     $(".owl-item.active video", this.$element)[0].play();
+      //     owl.trigger("stop.owl.autoplay");
+      //     $(".owl-item.active video", this.$element).on("ended", function () {
+      //       $(".owl-item.active video", this.$element)[0].play();
+      //     });
+      //   }
+      // },
+      // onTranslated: function () {
+      //   if ($(".owl-item.active video", this.$element).length) {
+      //     $(".owl-item.active video", this.$element)[0].play();
+      //     owl.trigger("stop.owl.autoplay");
+      //     $(".owl-item.active video", this.$element).on("ended", function () {
+      //       $(".owl-item.active video", this.$element)[0].play();
+      //     });
+      //   }
+      // },
       responsive: {
         375: {
           items: 1,
@@ -48,9 +48,12 @@ $(document).ready(function () {
         },
       },
     });
-  $(".owl-item").click(function () {
-    owl.trigger("next.owl.carousel");
-  });
+  if ($(".owl-item.active video", this.$element).length) {
+    return;
+  } else
+    $(".owl-item").click(function () {
+      owl.trigger("next.owl.carousel");
+    });
 });
 
 // Modal
@@ -80,3 +83,21 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+// Video controller
+
+const ctrlVideo = document.getElementById("video");
+const playBtn = document.querySelector(".play-btn");
+if (ctrlVideo) {
+  $(".play-btn").click(function () {
+    ctrlVideo.play();
+    $(".play-btn").addClass("hide-video-btn");
+  });
+}
+if (ctrlVideo) {
+  ctrlVideo.addEventListener("timeupdate", () => {
+    if (ctrlVideo.ended) {
+      $(".play-btn").removeClass("hide-video-btn");
+    }
+  });
+}

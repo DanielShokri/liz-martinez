@@ -19,7 +19,7 @@ ul {
   list-style: none;
   justify-content: space-between;
   padding: 0;
-  align-items: center;
+  align-items: end;
   margin: 0.8rem 24px;
 }
 
@@ -191,6 +191,10 @@ ul {
   /* height: 100vh; */
 }
 
+.fw-2020-modal-logo {
+  width: 156px;
+}
+
 /* Modal Content */
 .modal-content {
   background-color: #fefefe;
@@ -276,6 +280,36 @@ ul {
   cursor: pointer;
 }
 
+.play-btn {
+  background-color: #666;
+  border: medium none;
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  left: 0;
+  margin: 0 auto;
+  padding: 8px 16px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 10;
+  border-radius: 50%;
+  height: 78px;
+  cursor: pointer;
+}
+
+.hide-video-btn {
+  display: none;
+}
+
+video {
+  position: relative;
+}
+
+.video-item {
+  height: 575px;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 450px) {
@@ -290,8 +324,16 @@ ul {
     width: 157px;
   }
 
+  .video-item {
+    height: 415px;
+  }
+
   .just-liz {
     width: 98px;
+  }
+
+  .fw-2020-modal-logo {
+    width: 131px;
   }
 
   html,
@@ -300,7 +342,8 @@ ul {
   }
 
   ul {
-    margin: 8px 15px;
+    margin: 15px 15px;
+    align-items: center;
   }
 
   .page-container {
