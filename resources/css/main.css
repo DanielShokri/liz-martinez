@@ -90,27 +90,30 @@ img {
 
 @media screen and (max-width: 450px) {
   .main-site {
-    background: url("../images/Cover_1_662_new.jpg") no-repeat center center;
+    background: url("../images/Cover_1_662_new.jpg") no-repeat;
     background-size: cover;
     position: relative;
+    background-position: top center;
   }
 
   .poster-1 {
-    background: url("../images/Cover_2_662_new.jpg") no-repeat center center;
+    background: url("../images/Cover_2_662_new.jpg") no-repeat;
     background-size: cover;
     position: relative;
+    background-position: top center;
   }
 
   .poster-2 {
-    background: url("../images/Cover_3_662_new.jpg") no-repeat center center;
+    background: url("../images/Cover_3_662_new.jpg") no-repeat;
     background-size: cover;
     position: relative;
+    background-position: top center;
   }
 
   .arrow-right {
     display: inline-block;
     position: absolute;
-    top: 91%;
+    top: 92.5%;
     right: 27%;
     animation: none;
     height: 50px;

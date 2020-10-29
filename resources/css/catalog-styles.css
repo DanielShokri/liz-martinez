@@ -103,8 +103,8 @@ ul {
 
 .model-img-text {
   margin-bottom: 35px;
-  filter: invert(61%) sepia(9%) saturate(2085%) hue-rotate(314deg)
-    brightness(111%) contrast(95%);
+  /* filter: invert(61%) sepia(9%) saturate(2085%) hue-rotate(314deg)
+    brightness(111%) contrast(95%); */
 }
 
 /* Others */
@@ -165,6 +165,16 @@ ul {
 .footer-arrow-next {
   display: none;
 }
+
+.dress-price {
+  text-transform: uppercase;
+  font-family: Karla;
+  letter-spacing: 0.21px;
+  line-height: 28px;
+  font-size: 15px;
+  color: #2f2f2f;
+}
+
 /* Modal */
 
 /* The Modal (background) */
@@ -279,6 +289,10 @@ ul {
     width: 157px;
   }
 
+  .just-liz {
+    width: 98px;
+  }
+
   html,
   body {
     overflow-x: hidden;
@@ -345,6 +359,7 @@ ul {
     width: 90%;
     border: 1px solid;
     margin-bottom: 15px;
+    margin-top: 20px;
   }
 
   .footer-next {
