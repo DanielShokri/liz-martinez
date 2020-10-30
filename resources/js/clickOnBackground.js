@@ -8,13 +8,13 @@ if (mainSite) {
 const firstPoster = document.querySelector(".full-width-click-poster-1");
 if (firstPoster) {
   firstPoster.addEventListener("click", () => {
-    window.location.href = "/dist/catalog/model12/poppydress.html";
+    window.location.href = "/catalog/model12/poppydress.html";
   });
 }
 
 const secondPoster = document.querySelector(".full-width-click-poster-2");
 if (secondPoster) {
   secondPoster.addEventListener("click", () => {
-    window.location.href = "/dist/";
+    window.location.href = "/";
   });
 }
