@@ -77,6 +77,23 @@ button:focus {
 img {
   cursor: pointer;
 }
+
+#login {
+  z-index: 999;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: white !important;
+  position: absolute;
+  bottom: 35%;
+  right: 60%;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.submit {
+  cursor: pointer;
+}
+
 @keyframes arrow-jump {
   0%,
   100% {
@@ -117,5 +134,19 @@ img {
     right: -7%;
     animation: none;
     height: 50px;
+  }
+
+  #login {
+    z-index: 999;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: white !important;
+    text-align: center;
+    opacity: 0.5;
+    position: absolute;
+    top: 30%;
+    left: 17.5%;
+    width: 55%;
+    height: 220px;
   }
 }
