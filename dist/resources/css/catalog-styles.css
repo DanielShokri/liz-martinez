@@ -281,22 +281,20 @@ ul {
 }
 
 .play-btn {
-  background-color: #666;
-  border: medium none;
   width: 77px;
-  color: #fff;
   display: block;
-  font-size: 18px;
   left: -50px;
   margin: 0 auto;
-  padding: 8px 16px;
   position: absolute;
   right: 0;
   top: 50%;
   z-index: 10;
-  border-radius: 50%;
-  height: 78px;
   cursor: pointer;
+}
+
+.play-btn-img {
+  bottom: -328px;
+  position: absolute;
 }
 
 .hide-video-btn {
@@ -569,18 +567,35 @@ video {
     align-items: center;
   }
 
-  #owl-demo .item img {
+  #owl-demo .item img:not(.play-btn-img) {
     height: 645px;
-    width: 100%;
+    width: 98%;
+    position: relative;
+    left: 2px;
+  }
+
+  .play-btn {
+    width: 77px;
+    right: -34px;
+    bottom: 263px;
+  }
+
+  .liz-video-dress {
+    left: -6px;
+    object-fit: contain;
   }
 
   .owl-dots {
-    width: 101%;
+    width: 100%;
   }
 
   .slider-counter {
     position: absolute;
-    top: 95.3%;
+    top: 89.9%;
     left: 1.8%;
+  }
+
+  ul{
+    margin: 1.8rem 27px 0 27px;
   }
 }
