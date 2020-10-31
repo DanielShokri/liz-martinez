@@ -22,25 +22,20 @@ $(document).ready(function () {
       responsiveClass: true,
       merge: true,
       video: true,
+      dots: false,
+      dotsContainer: "#carousel-custom-dots",
       singleItem: true,
-      // onInitialized: function () {
-      //   if ($(".owl-item.active video", this.$element).length) {
-      //     $(".owl-item.active video", this.$element)[0].play();
-      //     owl.trigger("stop.owl.autoplay");
-      //     $(".owl-item.active video", this.$element).on("ended", function () {
-      //       $(".owl-item.active video", this.$element)[0].play();
-      //     });
-      //   }
-      // },
-      // onTranslated: function () {
-      //   if ($(".owl-item.active video", this.$element).length) {
-      //     $(".owl-item.active video", this.$element)[0].play();
-      //     owl.trigger("stop.owl.autoplay");
-      //     $(".owl-item.active video", this.$element).on("ended", function () {
-      //       $(".owl-item.active video", this.$element)[0].play();
-      //     });
-      //   }
-      // },
+      onChanged: function (e) {
+        const lizDots = document.querySelectorAll(".liz-dots");
+        const index = e.relatedTarget.relative(e.relatedTarget.current());
+        if (typeof index !== "undefined") {
+          console.log("index", index);
+          for (let i = 0; i < lizDots.length; i++) {
+            lizDots[i].style.backgroundColor = 'white';
+          }
+          lizDots[index].style.backgroundColor = 'black';
+        }
+      },
       responsive: {
         375: {
           items: 1,
@@ -48,6 +43,11 @@ $(document).ready(function () {
         },
       },
     });
+
+  function callback(e) {}
+  jQuery(".custom-dots-liz").on("click", "li", function (e) {
+    owl.trigger("to.owl.carousel", [jQuery(this).index(), 200]);
+  });
   if ($(".owl-item.active video", this.$element).length) {
     return;
   } else
